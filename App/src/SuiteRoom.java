@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+class SuiteRoom extends Room {
+    public SuiteRoom() {
+        super("Suite Room", 3, 6000.0, 400.0);
+    }
 
-public class SuiteRoom {
+    @Override
+    public void displayRoomDetails() {
+        System.out.println("Room Type: " + getRoomType());
+        System.out.println("Beds: " + getBeds());
+        System.out.println("Price: ₹" + getPrice());
+        System.out.println("Size: " + getSize() + " sq.ft");
+    }
 }
